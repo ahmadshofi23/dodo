@@ -56,7 +56,9 @@ class ParentLoginView extends GetView<ParentLoginController> {
                     ),
                     SizedBox(height: getProportionateScreenHeight(20)),
                     DefaultButton(
-                        text: "Login", press: () {}, color: kPrimaryColor),
+                        text: "Login",
+                        press: () => controller.onLoginParentSuccess(),
+                        color: kPrimaryColor),
                   ],
                 ),
               ),

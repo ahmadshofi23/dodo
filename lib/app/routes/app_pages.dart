@@ -6,6 +6,8 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
+import '../modules/notifior/bindings/notifior_binding.dart';
+import '../modules/notifior/views/notifior_view.dart';
 import '../modules/parent_login/bindings/parent_login_binding.dart';
 import '../modules/parent_login/views/parent_login_view.dart';
 import '../modules/registrasi/bindings/registrasi_binding.dart';
@@ -50,6 +52,11 @@ class AppPages {
       name: _Paths.SURFIOR,
       page: () => SurfiorView(),
       binding: SurfiorBinding(),
+    ),
+    GetPage(
+      name: _Paths.NOTIFIOR,
+      page: () => NotifiorView(),
+      binding: NotifiorBinding(),
     ),
   ];
 }

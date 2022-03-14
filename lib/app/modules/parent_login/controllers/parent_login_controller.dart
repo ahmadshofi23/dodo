@@ -1,3 +1,4 @@
+import 'package:dodo/app/routes/app_pages.dart';
 import 'package:get/get.dart';
 
 class ParentLoginController extends GetxController {
@@ -7,6 +8,11 @@ class ParentLoginController extends GetxController {
   @override
   void onInit() {
     super.onInit();
+  }
+
+  void onLoginParentSuccess() {
+    Get..snackbar("", "Login Success");
+    Get.toNamed(Routes.NOTIFIOR);
   }
 
   @override

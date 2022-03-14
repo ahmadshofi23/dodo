@@ -1,5 +1,4 @@
 import 'package:dodo/app/modules/home/views/component_home/default_button.dart';
-import 'package:dodo/app/routes/app_pages.dart';
 import 'package:dodo/app/utils/shared.dart';
 import 'package:dodo/app/utils/size_config.dart';
 import 'package:flutter/material.dart';

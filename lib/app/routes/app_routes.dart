@@ -9,6 +9,7 @@ abstract class Routes {
   static const PARENT_LOGIN = _Paths.PARENT_LOGIN;
   static const CHOSE_LOGIN = _Paths.CHOSE_LOGIN;
   static const SURFIOR = _Paths.SURFIOR;
+  static const NOTIFIOR = _Paths.NOTIFIOR;
 }
 
 abstract class _Paths {
@@ -19,4 +20,5 @@ abstract class _Paths {
   static const PARENT_LOGIN = '/parent-login';
   static const CHOSE_LOGIN = '/chose-login';
   static const SURFIOR = '/surfior';
+  static const NOTIFIOR = '/notifior';
 }
