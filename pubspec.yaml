@@ -9,6 +9,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   dropdown_button2: ^1.2.2
   get: 4.6.1
+  webview_flutter: 3.0.4
   flutter: 
     sdk: flutter
 
@@ -18,9 +19,7 @@ dev_dependencies:
     sdk: flutter
 
 flutter: 
-  uses-material-design: true
-
-  assets:
+  assets: 
     - assets/images/
-    # - assets/icons/
+  uses-material-design: true
 

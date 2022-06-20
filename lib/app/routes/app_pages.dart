@@ -12,8 +12,12 @@ import '../modules/parent_login/bindings/parent_login_binding.dart';
 import '../modules/parent_login/views/parent_login_view.dart';
 import '../modules/registrasi/bindings/registrasi_binding.dart';
 import '../modules/registrasi/views/registrasi_view.dart';
+import '../modules/reportior/bindings/reportior_binding.dart';
+import '../modules/reportior/views/reportior_view.dart';
 import '../modules/surfior/bindings/surfior_binding.dart';
 import '../modules/surfior/views/surfior_view.dart';
+import '../modules/web_view/bindings/web_view_binding.dart';
+import '../modules/web_view/views/web_view_view.dart';
 
 part 'app_routes.dart';
 
@@ -57,6 +61,16 @@ class AppPages {
       name: _Paths.NOTIFIOR,
       page: () => NotifiorView(),
       binding: NotifiorBinding(),
+    ),
+    GetPage(
+      name: _Paths.REPORTIOR,
+      page: () => ReportiorView(),
+      binding: ReportiorBinding(),
+    ),
+    GetPage(
+      name: _Paths.WEB_VIEW,
+      page: () => const WebViewView(),
+      binding: WebViewBinding(),
     ),
   ];
 }

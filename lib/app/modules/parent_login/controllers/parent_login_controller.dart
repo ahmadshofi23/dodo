@@ -12,7 +12,7 @@ class ParentLoginController extends GetxController {
 
   void onLoginParentSuccess() {
     Get..snackbar("", "Login Success");
-    Get.toNamed(Routes.NOTIFIOR);
+    Get.toNamed(Routes.REPORTIOR);
   }
 
   @override

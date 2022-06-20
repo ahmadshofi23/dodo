@@ -1,20 +1,11 @@
 import 'package:get/get.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class SurfiorController extends GetxController {
   //TODO: Implement SurfiorController
-
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
+  void loadWebView() {
+    WebView(
+      initialUrl: "https://www.google.com/",
+    );
   }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {}
-  void increment() => count.value++;
 }

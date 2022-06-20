@@ -10,6 +10,8 @@ abstract class Routes {
   static const CHOSE_LOGIN = _Paths.CHOSE_LOGIN;
   static const SURFIOR = _Paths.SURFIOR;
   static const NOTIFIOR = _Paths.NOTIFIOR;
+  static const REPORTIOR = _Paths.REPORTIOR;
+  static const WEB_VIEW = _Paths.WEB_VIEW;
 }
 
 abstract class _Paths {
@@ -21,4 +23,6 @@ abstract class _Paths {
   static const CHOSE_LOGIN = '/chose-login';
   static const SURFIOR = '/surfior';
   static const NOTIFIOR = '/notifior';
+  static const REPORTIOR = '/reportior';
+  static const WEB_VIEW = '/web-view';
 }

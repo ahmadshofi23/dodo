@@ -1,3 +1,4 @@
+import 'package:dodo/app/modules/home/views/component_home/default_button.dart';
 import 'package:dodo/app/utils/shared.dart';
 import 'package:dodo/app/utils/size_config.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
@@ -70,6 +71,9 @@ class NotifiorView extends GetView<NotifiorController> {
                           fontSize: getProportionateScreenHeight(16),
                           fontWeight: FontWeight.bold,
                         ),
+                      ),
+                      SizedBox(
+                        height: getProportionateScreenHeight(5),
                       ),
                       DropdownButtonHideUnderline(
                         child: DropdownButton2(
@@ -153,6 +157,9 @@ class NotifiorView extends GetView<NotifiorController> {
                           fontWeight: FontWeight.bold,
                           fontSize: getProportionateScreenHeight(16)),
                     ),
+                    SizedBox(
+                      height: getProportionateScreenHeight(5),
+                    ),
                     TextFormField(
                       maxLines: 8,
                       decoration: const InputDecoration.collapsed(
@@ -164,6 +171,13 @@ class NotifiorView extends GetView<NotifiorController> {
                     )
                   ],
                 ),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: getProportionateScreenHeight(20),
+                    horizontal: getProportionateScreenWidth(20)),
+                child: DefaultButton(
+                    text: "Send Action", color: kPrimaryColor, press: () {}),
               )
             ],
           ),
