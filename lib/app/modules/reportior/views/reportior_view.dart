@@ -2,6 +2,7 @@
 
 import 'package:dodo/app/modules/home/views/component_home/default_button.dart';
 import 'package:dodo/app/modules/reportior/views/component_reportior/list_date.dart';
+import 'package:dodo/app/modules/reportior/views/component_reportior/menu_bar.dart';
 import 'package:dodo/app/utils/shared.dart';
 import 'package:dodo/app/utils/size_config.dart';
 import 'package:flutter/material.dart';
@@ -15,14 +16,25 @@ class ReportiorView extends GetView<ReportiorController> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        resizeToAvoidBottomInset: false,
+        drawer: MenuBar(),
+        appBar: AppBar(
+          // automaticallyImplyLeading: false,
+          backgroundColor: kTextColor2,
+          title: Text("Reportior"),
+          elevation: 0,
+        ),
         body: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: ListDate(),
+              Padding(
+                padding: EdgeInsets.only(
+                  top: getProportionateScreenHeight(3),
+                ),
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: ListDate(),
+                ),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(
@@ -130,70 +142,6 @@ class ReportiorView extends GetView<ReportiorController> {
                 ),
               ),
               SizedBox(height: getProportionateScreenHeight(10)),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    horizontal: getProportionateScreenWidth(20)),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: Container(
-                        height: getProportionateScreenHeight(55),
-                        decoration: BoxDecoration(
-                          color: kPrimaryColor,
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                        child: Center(
-                          child: Text(
-                            "Graf",
-                            style: kTextStyleColor.copyWith(
-                              fontSize: getProportionateScreenWidth(50),
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(width: getProportionateScreenWidth(20)),
-                    Expanded(
-                      child: Container(
-                        height: getProportionateScreenHeight(55),
-                        decoration: BoxDecoration(
-                          color: kPrimaryColor,
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                        child: Center(
-                          child: Text(
-                            "Setting",
-                            style: kTextStyleColor.copyWith(
-                              fontSize: getProportionateScreenWidth(50),
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(width: getProportionateScreenWidth(20)),
-                    Expanded(
-                      child: Container(
-                        height: getProportionateScreenHeight(55),
-                        decoration: BoxDecoration(
-                          color: kPrimaryColor,
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                        child: Center(
-                          child: Text(
-                            "Logout",
-                            style: kTextStyleColor.copyWith(
-                              fontSize: getProportionateScreenWidth(50),
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
             ],
           ),
         ),
